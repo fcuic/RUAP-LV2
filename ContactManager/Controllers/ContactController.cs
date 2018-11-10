@@ -16,30 +16,31 @@ namespace ContactManager.Controllers
         public ContactController()
         {
             this.contactRepository = new ContactRepository();
-        } 
+        }
         public Contact[] Get()
         {
             return this.contactRepository.GetAllContacts();
-    {
-        new Contact
+            {
+                /* new Contact
+                 {
+                     Id = 1,
+                     Name = "Glenn Block"
+                 };
+                 new Contact
+                 {
+                     Id = 2,
+                     Name = "Dan Roth"
+                 };
+             };*/
+            }
+            /*public string[] Get()
+            {
+                return new string[]
         {
-            Id = 1,
-            Name = "Glenn Block"
+            "Hello",
+            "World"
         };
-        new Contact
-        {
-            Id = 2,
-            Name = "Dan Roth"
-        };
-    };
+            }*/
         }
-        /*public string[] Get()
-        {
-            return new string[]
-    {
-        "Hello",
-        "World"
-    };
-        }*/
     }
 }
